@@ -79,7 +79,7 @@ export default function Twisting() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <SectionHeading eyebrow="Good to know" title="Balloon twisting FAQ" className="mb-10" />
+        <SectionHeading title="Balloon twisting FAQ" className="mb-10" />
         <Faq items={faqs} />
         <p className="mt-8 text-center">
           <Button to="/pricing" variant="outline">See pricing</Button>

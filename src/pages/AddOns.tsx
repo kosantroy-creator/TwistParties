@@ -29,7 +29,7 @@ export default function AddOns() {
 
       <section className="mx-auto max-w-7xl px-6 py-16">
         <SectionHeading
-          eyebrow="Ask us what's available"
+          kicker="ask us what's available"
           title="More ways to make it special"
           subtitle="Availability and pricing vary by performer, so we keep it simple: tell us what you'd love, and we'll help connect you and pull together a quote."
           className="mb-10"
@@ -50,7 +50,7 @@ export default function AddOns() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <SectionHeading eyebrow="Good to know" title="Party add-ons FAQ" className="mb-10" />
+        <SectionHeading title="Party add-ons FAQ" className="mb-10" />
         <Faq items={faqs} />
       </section>
 

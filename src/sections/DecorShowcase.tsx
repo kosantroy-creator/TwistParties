@@ -12,12 +12,12 @@ export default function DecorShowcase() {
           ))}
         </div>
         <div>
-          <p className="eyebrow !text-tangerine">Premium custom decor</p>
-          <h2 className="mt-2 text-3xl !text-white sm:text-[2.3rem]">
+          <p className="font-accent text-2xl font-bold text-tangerine">Premium custom decor</p>
+          <h2 className="mt-1 text-3xl !text-white sm:text-[2.3rem]">
             Balloon decor that turns heads
           </h2>
           <p className="mt-4 text-lg text-[#c7d3e6]">
-            Statement walls, columns, arches, photo frames &amp; organic garlands — plus
+            Statement walls, columns, arches, photo frames &amp; organic garlands, plus
             foil balloons, balloon flowers, pool floaties, beach balls and playful
             textures, designed around your colours and theme. Made with{" "}
             <strong className="text-white">biodegradable latex</strong> wherever possible.

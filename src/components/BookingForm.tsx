@@ -82,7 +82,7 @@ export default function BookingForm() {
         <div className="mx-auto grid h-16 w-16 place-items-center rounded-full gradient-twist text-white">
           <i className="ti ti-check text-3xl" />
         </div>
-        <h3 className="mt-4 text-2xl">Thanks — your inquiry is on its way! 🎈</h3>
+        <h3 className="mt-4 text-2xl">Thanks, your inquiry is on its way!</h3>
         <p className="mx-auto mt-2 max-w-md text-slatey">
           We'll review your event and get back to you with availability, travel and the
           best package — usually within 24 hours. Want a faster reply?
@@ -125,7 +125,7 @@ export default function BookingForm() {
             {contactMethods.map((m) => (
               <label
                 key={m}
-                className={`cursor-pointer rounded-full border px-4 py-2 text-sm font-medium transition ${
+                className={`focus-within:[outline:3px_solid_#0B5BA8] focus-within:[outline-offset:2px] inline-flex min-h-[44px] cursor-pointer items-center rounded-full border px-4 py-2 text-sm font-medium transition ${
                   form.contactMethod === m
                     ? "border-twist bg-twist/10 text-twist"
                     : "border-hairline text-slatey"
@@ -203,7 +203,7 @@ export default function BookingForm() {
               type="button"
               key={s}
               onClick={() => toggleService(s)}
-              className={`rounded-full border px-3.5 py-2 text-sm font-medium transition ${
+              className={`focus-ring inline-flex min-h-[44px] items-center rounded-full border px-3.5 py-2 text-sm font-medium transition ${
                 active
                   ? "border-deepsea bg-deepsea/10 text-deepsea"
                   : "border-hairline text-slatey hover:border-sky"

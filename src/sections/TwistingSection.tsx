@@ -15,14 +15,14 @@ export default function TwistingSection() {
     <section className="mx-auto max-w-7xl px-6 py-16 md:py-20">
       <div className="grid items-center gap-10 md:grid-cols-2">
         <div>
-          <p className="eyebrow">Our specialty</p>
-          <h2 className="mt-2 text-3xl sm:text-[2.3rem]">
+          <p className="font-accent text-2xl font-bold text-burntorange">Our specialty</p>
+          <h2 className="mt-1 text-3xl sm:text-[2.3rem]">
             Balloon twisting that brings parties to life
           </h2>
           <p className="mt-4 text-lg text-slatey">
             Creating custom balloons for all your events. Guests pick their favourites
-            from our <strong className="text-ink">balloon menu</strong> — swords, flowers,
-            hats, wearables and show-stopping characters — and watch them come to life on
+            from our <strong className="text-ink">balloon menu</strong> (swords, flowers,
+            hats, wearables and show-stopping characters) and watch them come to life on
             the spot.
           </p>
           <ul className="mt-5 space-y-2.5">

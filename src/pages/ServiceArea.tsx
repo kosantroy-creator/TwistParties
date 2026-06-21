@@ -42,7 +42,6 @@ export default function ServiceArea() {
 
       <section className="mx-auto max-w-7xl px-6 py-16">
         <SectionHeading
-          eyebrow="What we bring"
           title={`Balloon fun for every ${area.name} event`}
           className="mb-10"
         />
@@ -69,7 +68,7 @@ export default function ServiceArea() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <SectionHeading eyebrow="Good to know" title={`Balloon twisting in ${area.name} — FAQ`} className="mb-10" />
+        <SectionHeading title={`Balloon twisting in ${area.name}: FAQ`} className="mb-10" />
         <Faq items={faqs} />
       </section>
 

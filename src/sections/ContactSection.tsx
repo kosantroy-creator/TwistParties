@@ -26,7 +26,7 @@ export default function ContactSection() {
 
             <div className="rounded-2xl border border-hairline bg-white p-5">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 border-b border-hairline py-3 font-medium hover:text-twist">
-                <i className="ti ti-brand-whatsapp text-xl text-[#25D366]" /> WhatsApp — fastest reply
+                <i className="ti ti-brand-whatsapp text-xl text-[#25D366]" /> WhatsApp, fastest reply
               </a>
               <a href={`mailto:${business.email}`} className="flex items-center gap-3 border-b border-hairline py-3 font-medium hover:text-twist">
                 <i className="ti ti-mail text-xl text-sky" /> {business.email}

@@ -89,7 +89,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-between gap-2 text-xs sm:flex-row">
-          <span>🌱 Biodegradable latex balloons · {business.tagline}</span>
+          <span className="inline-flex items-center gap-1.5"><i className="ti ti-leaf text-mint" aria-hidden="true" /> Biodegradable latex balloons · {business.tagline}</span>
           <span>© {new Date().getFullYear()} {business.name}. All rights reserved.</span>
         </div>
       </div>

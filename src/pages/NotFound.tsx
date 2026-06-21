@@ -9,7 +9,7 @@ export default function NotFound() {
       <Balloon size={44} color="#15ABE0" className="absolute right-[18%] bottom-12 animate-floaty opacity-70" />
       <div>
         <Seo title="Page not found | Twist Parties" />
-        <p className="font-display text-6xl font-bold text-gradient-twist">404</p>
+        <p className="font-display text-6xl font-bold text-twist">404</p>
         <h1 className="mt-2 text-3xl">This balloon floated away</h1>
         <p className="mx-auto mt-3 max-w-md text-slatey">
           The page you're looking for isn't here — but the party's still on.

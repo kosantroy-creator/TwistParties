@@ -82,7 +82,7 @@ export const howItWorks = [
   {
     n: 3,
     title: "We confirm the plan",
-    body: "Availability, travel and the best package — with a clear quote.",
+    body: "Availability, travel and the best package, with a clear quote.",
   },
 ];
 
@@ -117,8 +117,8 @@ export const galleryTiles: Photo[] = [
 export const about = {
   photo: "/photos/lauren.jpg",
   story: [
-    "An Event Management graduate from Capilano University, Lauren started Twist Parties from a simple curiosity: the art of balloon twisting. What began as self-taught practice through online tutorials quickly grew into a creative passion — from classic balloon poodles at local farmers' markets to intricate custom designs.",
-    "Today, Twist Parties offers far more than traditional balloon art: custom balloon sculptures, wearable balloon designs, and stunning photo-backdrop installations for events of all kinds. And it's no longer a one-person show — a team of talented balloon artists lets us bring colour to more parties across the Lower Mainland.",
+    "An Event Management graduate from Capilano University, Lauren started Twist Parties from a simple curiosity: the art of balloon twisting. What began as self-taught practice through online tutorials quickly grew into a creative passion, from classic balloon poodles at local farmers' markets to intricate custom designs.",
+    "Today, Twist Parties offers far more than traditional balloon art: custom balloon sculptures, wearable balloon designs, and stunning photo-backdrop installations for events of all kinds. And it's no longer a one-person show: a team of talented balloon artists lets us bring colour to more parties across the Lower Mainland.",
   ],
   artists: ["Lauren", "Sam", "Krystal", "Edward", "Dennis"],
 };
@@ -211,7 +211,7 @@ export const credentials = [
 
 export const guarantee = {
   title: "Our promise",
-  line: "Every guest leaves with a balloon they love — that's the Twist Parties guarantee.",
+  line: "Every guest leaves with a balloon they love. That's the Twist Parties guarantee.",
 };
 
 // Drives the AggregateRating schema. Keep this truthful: ratingCount should

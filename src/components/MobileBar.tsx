@@ -13,7 +13,7 @@ export default function MobileBar() {
         <Link
           ref={bookFx}
           to="/contact"
-          className="btn-shine relative overflow-hidden flex flex-1 items-center justify-center gap-2 rounded-full bg-twist py-3.5 font-body font-semibold text-white"
+          className="btn-shine focus-ring relative overflow-hidden flex flex-1 items-center justify-center gap-2 rounded-full bg-twist py-3.5 font-body font-semibold text-white"
         >
           <i className="ti ti-balloon text-lg" aria-hidden="true" /> Book Now
         </Link>
@@ -22,7 +22,7 @@ export default function MobileBar() {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-shine relative overflow-hidden flex flex-1 items-center justify-center gap-2 rounded-full bg-[#25D366] py-3.5 font-body font-semibold text-white"
+          className="btn-shine focus-ring relative overflow-hidden flex flex-1 items-center justify-center gap-2 rounded-full bg-[#25D366] py-3.5 font-body font-semibold text-white"
         >
           <i className="ti ti-brand-whatsapp text-lg" aria-hidden="true" /> WhatsApp
         </a>

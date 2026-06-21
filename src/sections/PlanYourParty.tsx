@@ -7,7 +7,7 @@ export default function PlanYourParty() {
       <SectionHeading
         kicker="quick & easy"
         title="Plan your party in under a minute"
-        subtitle="Answer a few quick questions and we'll come back with availability, travel and the best package — no long forms."
+        subtitle="Answer a few quick questions and we'll come back with availability, travel and the best package. No long forms."
         className="mb-10"
       />
       <PartyQuiz />

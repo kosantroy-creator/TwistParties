@@ -6,7 +6,7 @@ type Variant = "orange" | "blue" | "ghost" | "outline" | "whatsapp";
 type Size = "md" | "sm" | "lg";
 
 const base =
-  "btn-shine relative overflow-hidden inline-flex items-center justify-center gap-2 font-body font-semibold rounded-full cursor-pointer will-change-transform";
+  "btn-shine focus-ring relative overflow-hidden inline-flex items-center justify-center gap-2 font-body font-semibold rounded-full cursor-pointer will-change-transform";
 
 const sizes: Record<Size, string> = {
   sm: "px-5 py-2.5 text-sm",
@@ -14,12 +14,13 @@ const sizes: Record<Size, string> = {
   lg: "px-8 py-4 text-lg",
 };
 
+// Solid variants get a soft inset top highlight (claymorphic "candy" sheen).
 const variants: Record<Variant, string> = {
-  orange: "bg-twist text-white shadow-[0_10px_22px_-8px_rgba(255,122,31,0.6)]",
-  blue: "bg-deepsea text-white shadow-[0_10px_22px_-8px_rgba(11,91,168,0.5)]",
+  orange: "bg-twist text-white shadow-[0_12px_24px_-8px_rgba(255,122,31,0.65),inset_0_2px_0_rgba(255,255,255,0.35)]",
+  blue: "bg-deepsea text-white shadow-[0_12px_24px_-8px_rgba(11,91,168,0.55),inset_0_2px_0_rgba(255,255,255,0.28)]",
   ghost: "bg-white/15 text-white border-2 border-white/60 backdrop-blur-sm",
   outline: "bg-white text-deepsea border-2 border-hairline hover:border-sky",
-  whatsapp: "bg-[#25D366] text-white shadow-[0_10px_22px_-8px_rgba(37,211,102,0.6)]",
+  whatsapp: "bg-[#25D366] text-white shadow-[0_12px_24px_-8px_rgba(37,211,102,0.6),inset_0_2px_0_rgba(255,255,255,0.32)]",
 };
 
 type CommonProps = {

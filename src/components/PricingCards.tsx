@@ -1,17 +1,16 @@
 import Button from "./Button";
+import Reveal from "./Reveal";
 import { pricingTiers } from "../lib/site";
 
 export default function PricingCards() {
   return (
     <div>
-      <div className="grid items-stretch gap-5 md:grid-cols-3">
+      <Reveal stagger className="grid items-stretch gap-5 md:grid-cols-3">
         {pricingTiers.map((tier) => (
           <div
             key={tier.name}
-            className={`relative flex flex-col rounded-[var(--radius-card)] bg-white p-7 shadow-[var(--shadow-soft)] ${
-              tier.featured
-                ? "border-2 border-twist shadow-[0_18px_40px_-16px_rgba(255,122,31,0.4)]"
-                : "border border-hairline"
+            className={`relative flex flex-col rounded-[var(--radius-card)] bg-white p-7 clay ${
+              tier.featured ? "border-2 border-twist" : "border border-hairline"
             }`}
           >
             {tier.featured && "badge" in tier && (
@@ -48,10 +47,10 @@ export default function PricingCards() {
             </div>
           </div>
         ))}
-      </div>
+      </Reveal>
       <p className="mx-auto mt-6 max-w-2xl text-center text-sm text-slatey">
-        Add-ons: extra twisting (15 / 30 / 60 min), mini twisting lessons, face painting,
-        characters, mascots &amp; party favours — priced on request. Travel fee depends on
+        Add-ons: extra twisting (15, 30 or 60 min), mini twisting lessons, face painting,
+        characters, mascots and party favours, priced on request. Travel fee depends on
         location.
       </p>
     </div>

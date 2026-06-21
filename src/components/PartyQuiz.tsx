@@ -64,7 +64,7 @@ export default function PartyQuiz() {
   }
 
   const chip = (active: boolean) =>
-    `rounded-full border px-4 py-2.5 text-sm font-medium transition active:scale-95 ${
+    `focus-ring inline-flex min-h-[44px] items-center rounded-full border px-4 py-2.5 text-sm font-medium transition active:scale-95 ${
       active ? "border-twist bg-twist/10 text-twist" : "border-hairline text-slatey hover:border-sky"
     }`;
   const input =
@@ -76,7 +76,7 @@ export default function PartyQuiz() {
         <div className="mx-auto grid h-16 w-16 place-items-center rounded-full gradient-twist text-white">
           <i className="ti ti-confetti text-3xl" />
         </div>
-        <h3 className="mt-4 text-2xl">You're all set! 🎈</h3>
+        <h3 className="mt-4 text-2xl">You're all set!</h3>
         <p className="mx-auto mt-2 max-w-md text-slatey">
           Thanks {a.name?.split(" ")[0] || "so much"} — we've got your details and we'll reply with
           availability, travel and the best package, usually within 24 hours.

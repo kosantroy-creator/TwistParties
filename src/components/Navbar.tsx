@@ -20,7 +20,7 @@ export default function Navbar() {
               <NavLink
                 to={item.to}
                 className={({ isActive }) =>
-                  `text-sm font-medium transition-colors hover:text-twist ${
+                  `focus-ring rounded-md px-1 text-sm font-medium transition-colors hover:text-twist ${
                     isActive ? "text-twist" : "text-ink"
                   }`
                 }

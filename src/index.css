@@ -13,13 +13,16 @@
   --color-slatey: #5B6B82;
   --color-cloud: #F2F8FD;
   --color-hairline: #E4EDF4;
+  --color-burntorange: #C2410C;
 
   --font-display: "Fredoka", system-ui, sans-serif;
-  --font-body: "Poppins", system-ui, sans-serif;
+  --font-body: "Nunito", system-ui, sans-serif;
   --font-accent: "Caveat", cursive;
 
   --shadow-soft: 0 8px 24px -12px rgba(22, 35, 61, 0.25);
   --shadow-pop: 0 18px 50px -18px rgba(11, 91, 168, 0.35);
+  /* Claymorphic depth: soft double drop + inner bottom shadow for a toy-like, pressable feel */
+  --shadow-clay: 0 22px 48px -22px rgba(11, 91, 168, 0.32), 0 6px 14px -8px rgba(22, 35, 61, 0.14), inset 0 -10px 20px -14px rgba(11, 91, 168, 0.18);
 
   --radius-card: 22px;
 }
@@ -40,6 +43,18 @@
     line-height: 1.1;
     letter-spacing: -0.01em;
     color: var(--color-ink);
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  /* Visible keyboard focus for custom interactive elements */
+  .focus-ring {
+    outline: none;
+  }
+  .focus-ring:focus-visible {
+    outline: 3px solid var(--color-deepsea);
+    outline-offset: 2px;
   }
   ::selection {
     background: var(--color-twist);
@@ -57,25 +72,29 @@
   .gradient-cloud {
     background-image: linear-gradient(180deg, #F2F8FD 0%, #ffffff 100%);
   }
+  /* Reserved for the logo wordmark only (brand identity), not decorative text. */
   .text-gradient-twist {
     background-image: linear-gradient(135deg, #FF7A1F 0%, #FF5DA2 50%, #7C4DFF 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
+  .clay {
+    box-shadow: var(--shadow-clay);
+  }
   .kicker {
     font-family: var(--font-accent);
-    font-weight: 600;
-    font-size: 1.6rem;
+    font-weight: 700;
+    font-size: 1.7rem;
     line-height: 1;
-    color: var(--color-twist);
+    color: var(--color-burntorange);
   }
   .eyebrow {
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    font-size: 0.78rem;
-    color: var(--color-sky);
+    font-size: 0.8rem;
+    color: var(--color-deepsea);
   }
   .btn-shine::after {
     content: "";
@@ -117,4 +136,8 @@
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .animate-floaty { animation: none; }
+  .btn-shine::after { transition: none; }
+  .btn-shine:hover::after { transform: translateX(-130%) skewX(-20deg); }
+  /* Reveal elements must never stay hidden when motion is reduced */
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
 }

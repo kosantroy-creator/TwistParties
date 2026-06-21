@@ -65,7 +65,7 @@ export default function Decor() {
 
       <section className="gradient-cloud">
         <div className="mx-auto max-w-7xl px-6 py-16">
-          <SectionHeading eyebrow="Good to know" title="Balloon decor FAQ" className="mb-10" />
+          <SectionHeading title="Balloon decor FAQ" className="mb-10" />
           <Faq items={faqs} />
         </div>
       </section>
